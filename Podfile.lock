@@ -1,0 +1,167 @@
+PODS:
+  - Firebase/CoreOnly (6.13.0):
+    - FirebaseCore (= 6.4.0)
+  - Firebase/MLNLTranslate (6.13.0):
+    - Firebase/CoreOnly
+    - FirebaseMLNLTranslate (~> 0.17.0)
+  - Firebase/MLVision (6.13.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVision (~> 0.19.0)
+  - Firebase/MLVisionTextModel (6.13.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionTextModel (~> 0.19.0)
+  - FirebaseABTesting (3.1.2):
+    - FirebaseAnalyticsInterop (~> 1.3)
+    - FirebaseCore (~> 6.1)
+    - Protobuf (>= 3.9.2, ~> 3.9)
+  - FirebaseAnalyticsInterop (1.4.0)
+  - FirebaseCore (6.4.0):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnostics (1.1.2):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.1.0)
+  - FirebaseInstanceID (4.2.7):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - FirebaseMLCommon (0.19.0):
+    - FirebaseCore (~> 6.3)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - GoogleUtilities/UserDefaults (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.5)
+  - FirebaseMLNaturalLanguage (0.17.0):
+    - FirebaseCore (~> 6.3)
+    - FirebaseMLCommon (~> 0.19)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.5)
+  - FirebaseMLNLTranslate (0.17.0):
+    - FirebaseCore (~> 6.3)
+    - FirebaseMLNaturalLanguage (~> 0.17)
+    - FirebaseRemoteConfig (~> 4.4)
+  - FirebaseMLVision (0.19.0):
+    - FirebaseCore (~> 6.3)
+    - FirebaseMLCommon (~> 0.19)
+    - GoogleAPIClientForREST/Core (~> 1.3)
+    - GoogleAPIClientForREST/Vision (~> 1.3)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.5)
+  - FirebaseMLVisionTextModel (0.19.0):
+    - FirebaseMLVision (~> 0.19)
+  - FirebaseRemoteConfig (4.4.6):
+    - FirebaseABTesting (~> 3.1)
+    - FirebaseAnalyticsInterop (~> 1.4)
+    - FirebaseCore (~> 6.2)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleUtilities/Environment (~> 6.2)
+    - "GoogleUtilities/NSData+zlib (~> 6.2)"
+    - Protobuf (>= 3.9.2, ~> 3.9)
+  - GoogleAPIClientForREST/Core (1.3.11):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Vision (1.3.11):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleDataTransport (3.2.0)
+  - GoogleDataTransportCCTSupport (1.2.2):
+    - GoogleDataTransport (~> 3.2)
+    - nanopb (~> 0.3.901)
+  - GoogleToolboxForMac/DebugUtils (2.2.2):
+    - GoogleToolboxForMac/Defines (= 2.2.2)
+  - GoogleToolboxForMac/Defines (2.2.2)
+  - GoogleToolboxForMac/Logger (2.2.2):
+    - GoogleToolboxForMac/Defines (= 2.2.2)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.2)":
+    - GoogleToolboxForMac/Defines (= 2.2.2)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.2)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.2)
+    - GoogleToolboxForMac/Defines (= 2.2.2)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.2)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.2)"
+  - GoogleUtilities/Environment (6.3.2)
+  - GoogleUtilities/Logger (6.3.2):
+    - GoogleUtilities/Environment
+  - "GoogleUtilities/NSData+zlib (6.3.2)"
+  - GoogleUtilities/UserDefaults (6.3.2):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher (1.3.1):
+    - GTMSessionFetcher/Full (= 1.3.1)
+  - GTMSessionFetcher/Core (1.3.1)
+  - GTMSessionFetcher/Full (1.3.1):
+    - GTMSessionFetcher/Core (= 1.3.1)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - Protobuf (3.11.2)
+
+DEPENDENCIES:
+  - Firebase/MLNLTranslate
+  - Firebase/MLVision
+  - Firebase/MLVisionTextModel
+
+SPEC REPOS:
+  trunk:
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstanceID
+    - FirebaseMLCommon
+    - FirebaseMLNaturalLanguage
+    - FirebaseMLNLTranslate
+    - FirebaseMLVision
+    - FirebaseMLVisionTextModel
+    - FirebaseRemoteConfig
+    - GoogleAPIClientForREST
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - nanopb
+    - Protobuf
+
+SPEC CHECKSUMS:
+  Firebase: 458d109512200d1aca2e1b9b6cf7d68a869a4a46
+  FirebaseABTesting: 0d10f3cdc3fa00f3f175b5b56c1003c8e888299f
+  FirebaseAnalyticsInterop: d48b6ab67bcf016a05e55b71fc39c61c0cb6b7f3
+  FirebaseCore: 307ea2508df730c5865334e41965bd9ea344b0e5
+  FirebaseCoreDiagnostics: 511f4f3ed7d440bb69127e8b97c2bc8befae639e
+  FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
+  FirebaseInstanceID: ebd2ea79ee38db0cb5f5167b17a0d387e1cc7b6e
+  FirebaseMLCommon: 074a67e05122b1c9f6401a4e33b2cea3b4efd224
+  FirebaseMLNaturalLanguage: 9d38301a41b1201d248588bf66937b975391e8f4
+  FirebaseMLNLTranslate: ed248c2c2eaf3bc2450505e3e0c4c8487c7879fd
+  FirebaseMLVision: 7a456009787690e3b53436092ae9b635563de8f3
+  FirebaseMLVisionTextModel: c264caa3100ca804580bf2a7c1cb9ff390d1f471
+  FirebaseRemoteConfig: c11d74d8b1ff8463b587fc8899d92ee089f9a691
+  GoogleAPIClientForREST: 0f19a8280dfe6471f76016645d26eb5dae305101
+  GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
+  GoogleDataTransportCCTSupport: ef79a4728b864946a8aafdbab770d5294faf3b5f
+  GoogleToolboxForMac: 800648f8b3127618c1b59c7f97684427630c5ea3
+  GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
+  GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Protobuf: dd1aaea7140debfe4dd0683fb8ef208e527ae153
+
+PODFILE CHECKSUM: 2ea34f361b00df30c3fa7c0e4e1df56563fbfa05
+
+COCOAPODS: 1.8.4

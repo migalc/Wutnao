@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Shank",
+        "repositoryURL": "https://github.com/ZamzamInc/Shank",
+        "state": {
+          "branch": "master",
+          "revision": "ad863ae52c1bbf7885d4bfdb09a28b08bc3f8537",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

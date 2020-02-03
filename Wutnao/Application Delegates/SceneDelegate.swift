@@ -8,10 +8,18 @@
 
 import UIKit
 import SwiftUI
+import Shank
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    private let dependencies = Dependencies {
+        Module { WNMLManager.current as WNMLManagerProtocol }
+        Module { WNModelManager.current as WNModelManagerProtocol }
+        Module { WNTextRecognizer.current as WNTextRecognizerProtocol }
+        Module { WNTextTranslator.current as WNTextTranslatorProtocol }
+    }
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,7 +28,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        dependencies.build()
+        
+        let contentView = WNMainView(viewModel: WNMainViewViewModel())
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -57,6 +67,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    
+    func windowScene(_ windowScene: UIWindowScene, didUpdate previousCoordinateSpace: UICoordinateSpace, interfaceOrientation previousInterfaceOrientation: UIInterfaceOrientation, traitCollection previousTraitCollection: UITraitCollection) {
+        print(#function)
+        
     }
 
 

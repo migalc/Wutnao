@@ -3,27 +3,90 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B292AD92993D7B0990A55DA /* Pods_Wutnao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888A7B28CF9045D7C5AB0701 /* Pods_Wutnao.framework */; };
+		3629338823E86D430040C2A4 /* WNTextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3629338723E86D430040C2A4 /* WNTextRecognizer.swift */; };
+		362DC9F623EC2CCB00315826 /* WNBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DC9F523EC2CCB00315826 /* WNBaseViewModel.swift */; };
+		362DC9F823EC2D1D00315826 /* WNObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DC9F723EC2D1D00315826 /* WNObject.swift */; };
+		362DC9FA23EC2E9A00315826 /* WNTextTranslator+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DC9F923EC2E9A00315826 /* WNTextTranslator+Combine.swift */; };
+		362DC9FC23EC2EE300315826 /* WNTextRecognizer+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362DC9FB23EC2EE300315826 /* WNTextRecognizer+Combine.swift */; };
+		368A662823E9BDD00015624D /* WNTextTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A662723E9BDD00015624D /* WNTextTranslator.swift */; };
+		368A662D23E9C9AE0015624D /* DetectedPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368A662C23E9C9AE0015624D /* DetectedPath.swift */; };
+		368D672023EC4C3700311A23 /* WNLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D671F23EC4C3700311A23 /* WNLoading.swift */; };
+		368D672223EC4C4D00311A23 /* WNActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D672123EC4C4D00311A23 /* WNActivityIndicator.swift */; };
+		368D672523EC53BF00311A23 /* WNModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D672423EC53BF00311A23 /* WNModelManager.swift */; };
+		368D672723EC5C3700311A23 /* WNModelManager+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D672623EC5C3700311A23 /* WNModelManager+Combine.swift */; };
+		368D672B23EC6F8700311A23 /* WNLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D672A23EC6F8700311A23 /* WNLoadingViewModel.swift */; };
+		368D672D23EC7C7000311A23 /* WNActivityIndicatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D672C23EC7C7000311A23 /* WNActivityIndicatorViewModel.swift */; };
 		369AF1C223E849AA00682DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369AF1C123E849AA00682DE7 /* AppDelegate.swift */; };
 		369AF1C423E849AA00682DE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369AF1C323E849AA00682DE7 /* SceneDelegate.swift */; };
-		369AF1C623E849AA00682DE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369AF1C523E849AA00682DE7 /* ContentView.swift */; };
+		369AF1C623E849AA00682DE7 /* WNMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369AF1C523E849AA00682DE7 /* WNMainView.swift */; };
 		369AF1C823E849AE00682DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369AF1C723E849AE00682DE7 /* Assets.xcassets */; };
 		369AF1CB23E849AE00682DE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369AF1CA23E849AE00682DE7 /* Preview Assets.xcassets */; };
 		369AF1CE23E849AE00682DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369AF1CC23E849AE00682DE7 /* LaunchScreen.storyboard */; };
+		369AF1DB23E84B1E00682DE7 /* LegacyVideoCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369AF1DA23E84B1E00682DE7 /* LegacyVideoCamera.swift */; };
+		36A8494C23EB091D0025E8FD /* TextTranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8494B23EB091D0025E8FD /* TextTranslationModel.swift */; };
+		36A8494F23EB0C4F0025E8FD /* WNMLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8494E23EB0C4F0025E8FD /* WNMLManager.swift */; };
+		36A8495323EB0CDB0025E8FD /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8495223EB0CDB0025E8FD /* UIImage+Extensions.swift */; };
+		36A8495623EB0E9C0025E8FD /* FirebaseMLVision+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8495523EB0E9C0025E8FD /* FirebaseMLVision+Extensions.swift */; };
+		36B2EBEA23EB2A2F0016B19C /* WNVideoCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBE923EB2A2F0016B19C /* WNVideoCameraViewModel.swift */; };
+		36B2EBED23EB2BFF0016B19C /* WNMainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBEC23EB2BFF0016B19C /* WNMainViewViewModel.swift */; };
+		36B2EBF023EB30390016B19C /* CMSampleBuffer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBEF23EB30390016B19C /* CMSampleBuffer+Extensions.swift */; };
+		36B2EBF323EB33CD0016B19C /* WNDetectionsDrawingViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBF223EB33CD0016B19C /* WNDetectionsDrawingViewViewModel.swift */; };
+		36B2EBF623EB346E0016B19C /* WNDetectionPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBF523EB346E0016B19C /* WNDetectionPathView.swift */; };
+		36B2EBF823EB34820016B19C /* WNDetectionPathViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBF723EB34820016B19C /* WNDetectionPathViewViewModel.swift */; };
+		36B34F4B23E9CDCF006C1742 /* WNDetectionsDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B34F4A23E9CDCF006C1742 /* WNDetectionsDrawingView.swift */; };
+		36DDD88E23E84C3F0082DD2C /* WNVideoCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDD88D23E84C3F0082DD2C /* WNVideoCamera.swift */; };
+		36E25A5823EB15C600AE2D0D /* Shank in Frameworks */ = {isa = PBXBuildFile; productRef = 36E25A5723EB15C600AE2D0D /* Shank */; };
+		36E25A5B23EB167D00AE2D0D /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E25A5A23EB167D00AE2D0D /* NSObject+Extensions.swift */; };
+		36E25A5E23EB1ABF00AE2D0D /* Combinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E25A5D23EB1ABF00AE2D0D /* Combinable.swift */; };
+		36E77A0123E8859F000A4D74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36E77A0023E8859F000A4D74 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3629338723E86D430040C2A4 /* WNTextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNTextRecognizer.swift; sourceTree = "<group>"; };
+		362DC9F523EC2CCB00315826 /* WNBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNBaseViewModel.swift; sourceTree = "<group>"; };
+		362DC9F723EC2D1D00315826 /* WNObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNObject.swift; sourceTree = "<group>"; };
+		362DC9F923EC2E9A00315826 /* WNTextTranslator+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WNTextTranslator+Combine.swift"; sourceTree = "<group>"; };
+		362DC9FB23EC2EE300315826 /* WNTextRecognizer+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WNTextRecognizer+Combine.swift"; sourceTree = "<group>"; };
+		368A662723E9BDD00015624D /* WNTextTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNTextTranslator.swift; sourceTree = "<group>"; };
+		368A662C23E9C9AE0015624D /* DetectedPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedPath.swift; sourceTree = "<group>"; };
+		368D671F23EC4C3700311A23 /* WNLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNLoading.swift; sourceTree = "<group>"; };
+		368D672123EC4C4D00311A23 /* WNActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNActivityIndicator.swift; sourceTree = "<group>"; };
+		368D672423EC53BF00311A23 /* WNModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNModelManager.swift; sourceTree = "<group>"; };
+		368D672623EC5C3700311A23 /* WNModelManager+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WNModelManager+Combine.swift"; sourceTree = "<group>"; };
+		368D672A23EC6F8700311A23 /* WNLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNLoadingViewModel.swift; sourceTree = "<group>"; };
+		368D672C23EC7C7000311A23 /* WNActivityIndicatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNActivityIndicatorViewModel.swift; sourceTree = "<group>"; };
 		369AF1BE23E849AA00682DE7 /* Wutnao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wutnao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369AF1C123E849AA00682DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		369AF1C323E849AA00682DE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		369AF1C523E849AA00682DE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		369AF1C523E849AA00682DE7 /* WNMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNMainView.swift; sourceTree = "<group>"; };
 		369AF1C723E849AE00682DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		369AF1CA23E849AE00682DE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		369AF1CD23E849AE00682DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		369AF1CF23E849AE00682DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369AF1DA23E84B1E00682DE7 /* LegacyVideoCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyVideoCamera.swift; sourceTree = "<group>"; };
+		36A8494B23EB091D0025E8FD /* TextTranslationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTranslationModel.swift; sourceTree = "<group>"; };
+		36A8494E23EB0C4F0025E8FD /* WNMLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNMLManager.swift; sourceTree = "<group>"; };
+		36A8495223EB0CDB0025E8FD /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		36A8495523EB0E9C0025E8FD /* FirebaseMLVision+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirebaseMLVision+Extensions.swift"; sourceTree = "<group>"; };
+		36B2EBE923EB2A2F0016B19C /* WNVideoCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNVideoCameraViewModel.swift; sourceTree = "<group>"; };
+		36B2EBEC23EB2BFF0016B19C /* WNMainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNMainViewViewModel.swift; sourceTree = "<group>"; };
+		36B2EBEF23EB30390016B19C /* CMSampleBuffer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extensions.swift"; sourceTree = "<group>"; };
+		36B2EBF223EB33CD0016B19C /* WNDetectionsDrawingViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNDetectionsDrawingViewViewModel.swift; sourceTree = "<group>"; };
+		36B2EBF523EB346E0016B19C /* WNDetectionPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNDetectionPathView.swift; sourceTree = "<group>"; };
+		36B2EBF723EB34820016B19C /* WNDetectionPathViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNDetectionPathViewViewModel.swift; sourceTree = "<group>"; };
+		36B34F4A23E9CDCF006C1742 /* WNDetectionsDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNDetectionsDrawingView.swift; sourceTree = "<group>"; };
+		36DDD88D23E84C3F0082DD2C /* WNVideoCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNVideoCamera.swift; sourceTree = "<group>"; };
+		36E25A5A23EB167D00AE2D0D /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		36E25A5D23EB1ABF00AE2D0D /* Combinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinable.swift; sourceTree = "<group>"; };
+		36E77A0023E8859F000A4D74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		888A7B28CF9045D7C5AB0701 /* Pods_Wutnao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wutnao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5EE29CCE2768C8B45DBA18F /* Pods-Wutnao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wutnao.debug.xcconfig"; path = "Target Support Files/Pods-Wutnao/Pods-Wutnao.debug.xcconfig"; sourceTree = "<group>"; };
+		F27C381F584BB666EF5B6201 /* Pods-Wutnao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wutnao.release.xcconfig"; path = "Target Support Files/Pods-Wutnao/Pods-Wutnao.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +94,122 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E25A5823EB15C600AE2D0D /* Shank in Frameworks */,
+				0B292AD92993D7B0990A55DA /* Pods_Wutnao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0038AC401A896C768DD9E447 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				888A7B28CF9045D7C5AB0701 /* Pods_Wutnao.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3629338523E86D270040C2A4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				362DC9F423EC2CB300315826 /* Base */,
+				36A8495023EB0CCC0025E8FD /* Extensions */,
+				36A8494823EB08060025E8FD /* Gateway */,
+				368A662923E9C9750015624D /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3629338623E86D2F0040C2A4 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				3629338723E86D430040C2A4 /* WNTextRecognizer.swift */,
+				362DC9FB23EC2EE300315826 /* WNTextRecognizer+Combine.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		362DC9F423EC2CB300315826 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				362DC9F523EC2CCB00315826 /* WNBaseViewModel.swift */,
+				362DC9F723EC2D1D00315826 /* WNObject.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		364EF07D23EB04F000006AD7 /* Video Camera */ = {
+			isa = PBXGroup;
+			children = (
+				369AF1DA23E84B1E00682DE7 /* LegacyVideoCamera.swift */,
+				36DDD88D23E84C3F0082DD2C /* WNVideoCamera.swift */,
+				36B2EBE923EB2A2F0016B19C /* WNVideoCameraViewModel.swift */,
+			);
+			path = "Video Camera";
+			sourceTree = "<group>";
+		};
+		368A662923E9C9750015624D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36E25A5C23EB1AB800AE2D0D /* Combine */,
+				368A662A23E9C97B0015624D /* ML */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		368A662A23E9C97B0015624D /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				36A8494A23EB09030025E8FD /* Translation */,
+				36A8494923EB08170025E8FD /* Vision */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		368D671E23EC4C1700311A23 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				368D672923EC6F7000311A23 /* Activity Indicator */,
+				368D672823EC6F6900311A23 /* Loading */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		368D672323EC53B100311A23 /* Model Manager */ = {
+			isa = PBXGroup;
+			children = (
+				368D672423EC53BF00311A23 /* WNModelManager.swift */,
+				368D672623EC5C3700311A23 /* WNModelManager+Combine.swift */,
+			);
+			path = "Model Manager";
+			sourceTree = "<group>";
+		};
+		368D672823EC6F6900311A23 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				368D671F23EC4C3700311A23 /* WNLoading.swift */,
+				368D672A23EC6F8700311A23 /* WNLoadingViewModel.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		368D672923EC6F7000311A23 /* Activity Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				368D672123EC4C4D00311A23 /* WNActivityIndicator.swift */,
+				368D672C23EC7C7000311A23 /* WNActivityIndicatorViewModel.swift */,
+			);
+			path = "Activity Indicator";
+			sourceTree = "<group>";
+		};
 		369AF1B523E849AA00682DE7 = {
 			isa = PBXGroup;
 			children = (
 				369AF1C023E849AA00682DE7 /* Wutnao */,
 				369AF1BF23E849AA00682DE7 /* Products */,
+				D1A5956B5F9C37174CC2E1AE /* Pods */,
+				0038AC401A896C768DD9E447 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +224,11 @@
 		369AF1C023E849AA00682DE7 /* Wutnao */ = {
 			isa = PBXGroup;
 			children = (
-				369AF1C123E849AA00682DE7 /* AppDelegate.swift */,
-				369AF1C323E849AA00682DE7 /* SceneDelegate.swift */,
-				369AF1C523E849AA00682DE7 /* ContentView.swift */,
-				369AF1C723E849AE00682DE7 /* Assets.xcassets */,
-				369AF1CC23E849AE00682DE7 /* LaunchScreen.storyboard */,
-				369AF1CF23E849AE00682DE7 /* Info.plist */,
-				369AF1C923E849AE00682DE7 /* Preview Content */,
+				3629338523E86D270040C2A4 /* Core */,
+				369AF1D623E849F200682DE7 /* Scenes */,
+				369AF1D823E84A3400682DE7 /* Supporting Files */,
+				369AF1D723E84A0700682DE7 /* Resources */,
+				369AF1D523E849E100682DE7 /* Application Delegates */,
 			);
 			path = Wutnao;
 			sourceTree = "<group>";
@@ -75,6 +241,193 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		369AF1D523E849E100682DE7 /* Application Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				369AF1C123E849AA00682DE7 /* AppDelegate.swift */,
+				369AF1C323E849AA00682DE7 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegates";
+			sourceTree = "<group>";
+		};
+		369AF1D623E849F200682DE7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				36B2EBEB23EB2BBA0016B19C /* Main */,
+				369AF1D923E84AB000682DE7 /* Views */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		369AF1D723E84A0700682DE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				369AF1CC23E849AE00682DE7 /* LaunchScreen.storyboard */,
+				369AF1C923E849AE00682DE7 /* Preview Content */,
+				369AF1C723E849AE00682DE7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		369AF1D823E84A3400682DE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36E77A0023E8859F000A4D74 /* GoogleService-Info.plist */,
+				369AF1CF23E849AE00682DE7 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		369AF1D923E84AB000682DE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				368D671E23EC4C1700311A23 /* Shared */,
+				36B2EBF123EB33B00016B19C /* Detections */,
+				364EF07D23EB04F000006AD7 /* Video Camera */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36A8494823EB08060025E8FD /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				36A8494D23EB0C350025E8FD /* ML */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		36A8494923EB08170025E8FD /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				368A662C23E9C9AE0015624D /* DetectedPath.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		36A8494A23EB09030025E8FD /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				36A8494B23EB091D0025E8FD /* TextTranslationModel.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		36A8494D23EB0C350025E8FD /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				368D672323EC53B100311A23 /* Model Manager */,
+				36E77A0223E88B32000A4D74 /* Translation */,
+				3629338623E86D2F0040C2A4 /* Vision */,
+				36A8494E23EB0C4F0025E8FD /* WNMLManager.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		36A8495023EB0CCC0025E8FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				36B2EBEE23EB302B0016B19C /* AVFoundation */,
+				36E25A5923EB166C00AE2D0D /* Foundation */,
+				36A8495423EB0D070025E8FD /* ML */,
+				36A8495123EB0CD10025E8FD /* UI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36A8495123EB0CD10025E8FD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				36A8495223EB0CDB0025E8FD /* UIImage+Extensions.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		36A8495423EB0D070025E8FD /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				36A8495523EB0E9C0025E8FD /* FirebaseMLVision+Extensions.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		36B2EBE723EB29800016B19C /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Operators;
+			sourceTree = "<group>";
+		};
+		36B2EBEB23EB2BBA0016B19C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				369AF1C523E849AA00682DE7 /* WNMainView.swift */,
+				36B2EBEC23EB2BFF0016B19C /* WNMainViewViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		36B2EBEE23EB302B0016B19C /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				36B2EBEF23EB30390016B19C /* CMSampleBuffer+Extensions.swift */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		36B2EBF123EB33B00016B19C /* Detections */ = {
+			isa = PBXGroup;
+			children = (
+				36B2EBF423EB34550016B19C /* Path View */,
+				36B34F4A23E9CDCF006C1742 /* WNDetectionsDrawingView.swift */,
+				36B2EBF223EB33CD0016B19C /* WNDetectionsDrawingViewViewModel.swift */,
+			);
+			path = Detections;
+			sourceTree = "<group>";
+		};
+		36B2EBF423EB34550016B19C /* Path View */ = {
+			isa = PBXGroup;
+			children = (
+				36B2EBF523EB346E0016B19C /* WNDetectionPathView.swift */,
+				36B2EBF723EB34820016B19C /* WNDetectionPathViewViewModel.swift */,
+			);
+			path = "Path View";
+			sourceTree = "<group>";
+		};
+		36E25A5923EB166C00AE2D0D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				36E25A5A23EB167D00AE2D0D /* NSObject+Extensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		36E25A5C23EB1AB800AE2D0D /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				36B2EBE723EB29800016B19C /* Operators */,
+				36E25A5D23EB1ABF00AE2D0D /* Combinable.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		36E77A0223E88B32000A4D74 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				368A662723E9BDD00015624D /* WNTextTranslator.swift */,
+				362DC9F923EC2E9A00315826 /* WNTextTranslator+Combine.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		D1A5956B5F9C37174CC2E1AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5EE29CCE2768C8B45DBA18F /* Pods-Wutnao.debug.xcconfig */,
+				F27C381F584BB666EF5B6201 /* Pods-Wutnao.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,15 +435,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 369AF1D223E849AE00682DE7 /* Build configuration list for PBXNativeTarget "Wutnao" */;
 			buildPhases = (
+				446FA4BC9621AA9E552A5DD6 /* [CP] Check Pods Manifest.lock */,
 				369AF1BA23E849AA00682DE7 /* Sources */,
 				369AF1BB23E849AA00682DE7 /* Frameworks */,
 				369AF1BC23E849AA00682DE7 /* Resources */,
+				B175EA6587358EA2128F985C /* [CP] Embed Pods Frameworks */,
+				458A6436E0231B1E6BFB5319 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Wutnao;
+			packageProductDependencies = (
+				36E25A5723EB15C600AE2D0D /* Shank */,
+			);
 			productName = Wutnao;
 			productReference = 369AF1BE23E849AA00682DE7 /* Wutnao.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +478,9 @@
 				Base,
 			);
 			mainGroup = 369AF1B523E849AA00682DE7;
+			packageReferences = (
+				36E25A5623EB15C600AE2D0D /* XCRemoteSwiftPackageReference "Shank" */,
+			);
 			productRefGroup = 369AF1BF23E849AA00682DE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,20 +497,108 @@
 			files = (
 				369AF1CE23E849AE00682DE7 /* LaunchScreen.storyboard in Resources */,
 				369AF1CB23E849AE00682DE7 /* Preview Assets.xcassets in Resources */,
+				36E77A0123E8859F000A4D74 /* GoogleService-Info.plist in Resources */,
 				369AF1C823E849AE00682DE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		446FA4BC9621AA9E552A5DD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wutnao-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		458A6436E0231B1E6BFB5319 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wutnao/Pods-Wutnao-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wutnao/Pods-Wutnao-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wutnao/Pods-Wutnao-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B175EA6587358EA2128F985C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wutnao/Pods-Wutnao-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wutnao/Pods-Wutnao-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wutnao/Pods-Wutnao-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		369AF1BA23E849AA00682DE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B2EBF823EB34820016B19C /* WNDetectionPathViewViewModel.swift in Sources */,
+				362DC9F623EC2CCB00315826 /* WNBaseViewModel.swift in Sources */,
+				368D672B23EC6F8700311A23 /* WNLoadingViewModel.swift in Sources */,
+				36B2EBF323EB33CD0016B19C /* WNDetectionsDrawingViewViewModel.swift in Sources */,
+				362DC9FC23EC2EE300315826 /* WNTextRecognizer+Combine.swift in Sources */,
+				368D672523EC53BF00311A23 /* WNModelManager.swift in Sources */,
+				36E25A5B23EB167D00AE2D0D /* NSObject+Extensions.swift in Sources */,
+				369AF1DB23E84B1E00682DE7 /* LegacyVideoCamera.swift in Sources */,
+				36B2EBED23EB2BFF0016B19C /* WNMainViewViewModel.swift in Sources */,
+				36B34F4B23E9CDCF006C1742 /* WNDetectionsDrawingView.swift in Sources */,
 				369AF1C223E849AA00682DE7 /* AppDelegate.swift in Sources */,
 				369AF1C423E849AA00682DE7 /* SceneDelegate.swift in Sources */,
-				369AF1C623E849AA00682DE7 /* ContentView.swift in Sources */,
+				36A8494C23EB091D0025E8FD /* TextTranslationModel.swift in Sources */,
+				36B2EBEA23EB2A2F0016B19C /* WNVideoCameraViewModel.swift in Sources */,
+				369AF1C623E849AA00682DE7 /* WNMainView.swift in Sources */,
+				36E25A5E23EB1ABF00AE2D0D /* Combinable.swift in Sources */,
+				368D672D23EC7C7000311A23 /* WNActivityIndicatorViewModel.swift in Sources */,
+				36A8494F23EB0C4F0025E8FD /* WNMLManager.swift in Sources */,
+				368D672023EC4C3700311A23 /* WNLoading.swift in Sources */,
+				368D672723EC5C3700311A23 /* WNModelManager+Combine.swift in Sources */,
+				3629338823E86D430040C2A4 /* WNTextRecognizer.swift in Sources */,
+				36B2EBF023EB30390016B19C /* CMSampleBuffer+Extensions.swift in Sources */,
+				362DC9F823EC2D1D00315826 /* WNObject.swift in Sources */,
+				36A8495623EB0E9C0025E8FD /* FirebaseMLVision+Extensions.swift in Sources */,
+				368A662D23E9C9AE0015624D /* DetectedPath.swift in Sources */,
+				368D672223EC4C4D00311A23 /* WNActivityIndicator.swift in Sources */,
+				36A8495323EB0CDB0025E8FD /* UIImage+Extensions.swift in Sources */,
+				36B2EBF623EB346E0016B19C /* WNDetectionPathView.swift in Sources */,
+				362DC9FA23EC2E9A00315826 /* WNTextTranslator+Combine.swift in Sources */,
+				368A662823E9BDD00015624D /* WNTextTranslator.swift in Sources */,
+				36DDD88E23E84C3F0082DD2C /* WNVideoCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +732,14 @@
 		};
 		369AF1D323E849AE00682DE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5EE29CCE2768C8B45DBA18F /* Pods-Wutnao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Wutnao/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Wutnao/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = VNFY2URN36;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Wutnao/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Wutnao/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,13 +753,14 @@
 		};
 		369AF1D423E849AE00682DE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27C381F584BB666EF5B6201 /* Pods-Wutnao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Wutnao/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Wutnao/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = VNFY2URN36;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Wutnao/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Wutnao/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +794,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36E25A5623EB15C600AE2D0D /* XCRemoteSwiftPackageReference "Shank" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZamzamInc/Shank";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36E25A5723EB15C600AE2D0D /* Shank */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36E25A5623EB15C600AE2D0D /* XCRemoteSwiftPackageReference "Shank" */;
+			productName = Shank;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 369AF1B623E849AA00682DE7 /* Project object */;
 }
