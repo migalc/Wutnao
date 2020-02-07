@@ -10,6 +10,11 @@
 
 A small venture into SwiftUI which is basically an iOS app that detects text from a video input and shows the translated version in the detection box. 
 
+<div align="center">
+<img src="https://imgur.com/nHeY7fM.gif"  width="160" height="300" />
+</div>
+
+
 ## 2. Used frameworks
 
 - Combine
